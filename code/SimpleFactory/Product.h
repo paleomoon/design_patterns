@@ -13,9 +13,9 @@ class Product
 
 public:
 	Product();
-	virtual ~Product();
+	virtual ~Product(); //析构养成加virtual的好习惯
 	
-	virtual void Use() = 0;
+	virtual void Use() = 0; //Product有纯虚函数，为抽象类，不能实例化，只能用作接口
 
 };
 #endif // !defined(EA_9126430A_5CDD_4424_AA90_549F255E0D2D__INCLUDED_)

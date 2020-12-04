@@ -7,6 +7,8 @@
 
 #include "ConcreteFactory.h"
 #include "ConcreteProduct.h"
+#include <iostream>
+using namespace std;
 
 ConcreteFactory::ConcreteFactory(){
 
@@ -18,6 +20,6 @@ ConcreteFactory::~ConcreteFactory(){
 }
 
 Product* ConcreteFactory::factoryMethod(){
-
+	cout << "ConcreteFactory::factoryMethod" << endl;
 	return  new ConcreteProduct();
 }

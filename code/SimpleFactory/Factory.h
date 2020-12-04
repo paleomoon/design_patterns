@@ -19,7 +19,7 @@ public:
 	Factory();
 	virtual ~Factory();
 
-	static Product * createProduct(string proname);
+	static Product * createProduct(string proname); //工厂方法为静态方法方便直接用类名调用
 
 };
 #endif // !defined(EA_4C08AF19_2960_47a1_B769_9B60CFA50FE0__INCLUDED_)

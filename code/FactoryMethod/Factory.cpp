@@ -7,6 +7,8 @@
 
 #include "Factory.h"
 #include<stdio.h> 
+#include <iostream>
+using namespace std;
 
 
 Factory::Factory(){
@@ -20,6 +22,7 @@ Factory::~Factory(){
 }
 
 Product* Factory::factoryMethod(){
+	cout << "Factory::factoryMethod" << endl;
 	return  NULL;
 }
 

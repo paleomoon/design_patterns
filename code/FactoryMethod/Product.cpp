@@ -6,7 +6,8 @@
 ///////////////////////////////////////////////////////////
 
 #include "Product.h"
-
+#include <iostream>
+using namespace std;
 
 Product::Product(){
 
@@ -23,5 +24,5 @@ Product::~Product(){
 
 
 void Product::use(){
-
+    cout << "Product::use" << endl;
 }
