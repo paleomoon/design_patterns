@@ -9,7 +9,7 @@
 #include <iostream>
 using namespace std;
 
-Singleton * Singleton::instance = NULL;
+Singleton * Singleton::instance = NULL; //静态成员类内声明，类外初始化
 Singleton::Singleton(){
 
 }
