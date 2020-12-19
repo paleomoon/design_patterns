@@ -8,10 +8,10 @@ using namespace std;
 int main(int argc, char *argv[])
 {
 	ConcreteComponent * pRealProd = new ConcreteComponent();
-	//¶¯Ì¬Ôö¼ÓÐÐÎª 
+	//åŠ¨æ€å¢žåŠ è¡Œä¸º
 	Component * pA = new ConcreteDecoratorA(pRealProd);
 	pA->operation();
-	//¼ÌÐø¶¯Ì¬Ôö¼ÓÐÐÎª 
+	//ç»§ç»­åŠ¨æ€å¢žåŠ è¡Œä¸º
 	Component * pB = new ConcreteDecoratorB(pA);
 	pB->operation();
 	
